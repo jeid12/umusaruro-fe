@@ -24,12 +24,5 @@ if(photo){
 }
 
 //for About page
-const aboutNavbar = document.getElementById("navbarAbout");
-if(aboutNavbar){
-    aboutNavbar.innerHTML = Navbar();
-}
-
-const aboutFooter = document.getElementById("footerAbout");
-if(aboutFooter){
-    aboutFooter.innerHTML = Footer();
-}
+document.getElementById('navbar-container').innerHTML = Navbar();
+document.getElementById('footer-container').innerHTML = Footer();
