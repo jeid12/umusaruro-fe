@@ -22,3 +22,14 @@ const photo =document.getElementById("slider");
 if(photo){
     photo.innerHTML = SlidingPhotosSection();
 }
+
+//for About page
+const aboutNavbar = document.getElementById("navbarAbout");
+if(aboutNavbar){
+    aboutNavbar.innerHTML = Navbar();
+}
+
+const aboutFooter = document.getElementById("footerAbout");
+if(aboutFooter){
+    aboutFooter.innerHTML = Footer();
+}
