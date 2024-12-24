@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+.app{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .navbar-nav .nav-link {
     margin-right: 25px; /* Adds space between links */
 }
@@ -30,4 +35,196 @@
 
 .navbar-toggler-icon {
     background-color: white; /* Ensure the toggler icon is visible */
+}
+/*footer*/
+
+
+/* Footer */
+.footer {
+    background-color: #228B22; /* Grass green */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 3px solid #1a6e1a; /* Darker green top border */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #f8f9fa;
+}
+
+.footer-link {
+    color: #f8f9fa;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-link:hover {
+    color: #d4edda;
+}
+
+.social-icons .social-icon {
+    color: #f8f9fa;
+    margin-left: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-icons .social-icon:hover {
+    color: #d4edda;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}
+
+/* Search Section */
+.search-section {
+    background-color: #d4edda; /* Light green background */
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Search Container */
+.search-container {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center vertically */
+    gap: 10px; /* Spacing between input and button */
+}
+
+/* Input Field */
+.search-input {
+    flex: 1; /* Take up available space */
+    padding: 10px;
+    border: 2px solid #228B22; /* Grass green border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Search Button */
+.search-button {
+    background-color: #228B22; /* Grass green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #1a6e1a; /* Darker green on hover */
+}
+
+/* Date Button */
+.btn-date {
+    background-color: #228B22; /* Grass green */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-date:hover {
+    background-color: #1a6e1a; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column; /* Stack input and button vertically */
+        gap: 10px; /* Add spacing for stacked items */
+    }
+}
+
+.content{
+    min-height: 100vh;
+}
+
+/* Sliding Photos Section */
+/* Sliding Photos Section */
+.sliding-photos-section {
+    margin-top: 20px;
+    position: relative;
+}
+
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.carousel-caption h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption .btn {
+    background-color: #228B22; /* Grass green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #1a6e1a; /* Darker green on hover */
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.sliding-photos-section .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.sliding-photos-section .carousel-caption h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.sliding-photos-section .carousel-caption button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
 }
