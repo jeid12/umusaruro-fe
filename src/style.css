@@ -1,1 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-nav .nav-link {
+    margin-right: 25px; /* Adds space between links */
+}
+.navbar-nav .nav-link:hover{
+    color: #0ee24d;
 
+}
+.navbar {
+    overflow-x: hidden; /* Prevents horizontal overflow */
+    z-index: 1030; /* Ensures navbar stays on top */
+}
+.custom-bg {
+    background-color: #228B22 !important; /* Grass green color */
+    color: white; /* Text color for better contrast */
+}
+
+.navbar-nav .nav-link {
+    color: white !important; /* Ensure links are visible on green background */
+    margin-right: 15px; /* Adds space between links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #edd4de; /* Light green on hover for better UX */
+}
+
+.navbar-toggler-icon {
+    background-color: white; /* Ensure the toggler icon is visible */
+}
